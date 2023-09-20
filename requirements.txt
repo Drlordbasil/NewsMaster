@@ -1,0 +1,15 @@
+The package requirements for this Python program are:
+
+- requests
+- bs4 (BeautifulSoup)
+- nltk (including nltk.corpus, nltk.stem, and nltk.tokenize)
+- sklearn (including sklearn.feature_extraction.text and sklearn.svm)
+- telegram
+
+To install these packages, you can use the following command:
+
+```
+pip install requests beautifulsoup4 nltk scikit-learn python-telegram-bot
+```
+
+Note that you may need to use `pip3` instead of `pip` if you are using Python 3.
