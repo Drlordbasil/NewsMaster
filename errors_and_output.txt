@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\Users\Antho\temp.py", line 154, in <module>
+    main()
+  File "C:\Users\Antho\temp.py", line 131, in main
+    features = content_analyzer.analyze_content(web_scraper.articles)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Antho\temp.py", line 58, in analyze_content
+    features = self.vectorizer.fit_transform(content)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Antho\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\feature_extraction\text.py", line 2126, in fit_transform
+    X = super().fit_transform(raw_documents)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Antho\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Antho\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\feature_extraction\text.py", line 1383, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Antho\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\feature_extraction\text.py", line 1289, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
